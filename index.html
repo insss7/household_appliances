@@ -1,11 +1,171 @@
 <!DOCTYPE html>
-<html lang= "en">
+<html lang="en">
 <head>
-      <meta charset = "UTF-8">
-   <meta name = "author" content = "Anastasiya">
-   <title>Household appliances</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Anastasiya">
+    <title>Побутові товари</title>
+    <style>
+        body {
+            background-color: #c1cee5da;
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: justify;
+        }
+        h1 {
+            text-align: center;
+            color: #00509E;
+        }
+        p {
+            font-size: 16px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: rgb(85, 105, 159);
+        }
+        .italic {
+            font-style: italic;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #00509E;
+            color: white;
+        }
+        img {
+            width: 100px;
+            height: auto;
+        }
+
+        a {
+            color: #00509E;
+            text-decoration: none;
+        }
+        a:visited {
+            color: #800080; 
+        }
+        a:hover {
+            color: #e69935; 
+        }
+        a:active {
+            color: #becb2e; 
+        }
+
+    </style>
 </head>
 <body>
-      <h1>Welcome!</h1>
+    <h1>Вітаємо у магазині!</h1>
+    
+    <p><span class="highlight">Побутова техніка</span> відіграє вирішальну роль у нашому повсякденному житті! </p>
+    <p class="italic">Ми пропонуємо широкий вибір сучасної та якісної техніки для вашого дому: холодильники, пральні машини, мікрохвильові печі, тостери, пилососи та багато іншого. У нас тільки надійні бренди, вигідні ціни та офіційна гарантія на всю продукцію.
+Забезпечте свій дім комфортом разом із нами! Швидка доставка, професійна консультація та зручні умови оплати зроблять ваш вибір простим та приємним. Обирайте найкраще для себе та своєї родини!</p>
+
+<p><a href="#sale">Перейти до товарів зі знижкою</a></p>
+
+<h3>Дізнайтеся більше про нас</h3>
+    <p>Ми прагнемо забезпечити наших клієнтів лише найкращими товарами для дому та побуту. Наша команда ретельно відбирає продукцію, щоб гарантувати високу якість, надійність та сучасні технології. 
+       Якщо ви хочете більше дізнатися про нашу компанію, нашу місію, історію розвитку та цінності, які ми сповідуємо, переходьте за посиланням нижче. 
+       Дізнайтеся більше про нас, нашу команду та принципи роботи, які допомагають нам створювати комфорт для кожного клієнта.</p>
+    <p><a href="about_us.html">Перейти на сторінку "Про нас"</a></p>
+
+
+    <h2>Product Showcase</h2>
+            <a href="all.avif" target="_blank">
+                <img src="all.avif" alt="Побутова техніка" style="width: 500px; height: auto;">
+              </a>
+    </a>
+    
+    <h2>Товари тижня</h2>
+    <table>
+        <tr>
+            <th>Холодильник</th>
+            <th>Мікрохвильова піч</th>
+            <th>Тостер</th>
+        </tr>
+        <tr>
+            <td><img src="fridge.jpeg" alt="Fridge"></td>
+            <td><img src="microwave.jpg" alt="Microwave"></td>
+            <td><img src="toster.webp" alt="tv"></td>
+        </tr>
+        <tr>
+            <td>Сучасний та енергоефективний <br> холодильник,який забезпечує <br> оптимальне збереження продуктів</td>
+            <td>Потужна мікрохвильова піч, <br> яка забезпечує швидке та <br> рівномірне розігрівання їжі.</td>
+            <td>Компактний та стильний тостер,<br> який забезпечує рівномірне <br> підсмаження хліба.</td>
+        </tr>
+        <tr>
+            <a href="#fridge"> </a>
+            <td><a href="catalogue.html#fridge" target="_blank">Переглянути товар</a></td>
+            <a href="#microwave"> </a>
+            <td><a href="catalogue.html#microwave" target="_blank">Переглянути товар</a></td>
+            <a href="#toaster"> </a>
+            <td><a href="catalogue.html#toaster" target="_blank">Переглянути товар</a></td>
+        </tr>
+
+    </table>
+    
+
+    
+    <h2 id="sale">Встигніть придбати товари зі зниженою ціною</h2>
+
+<table cellspacing="10"
+cellpadding="15" border="1" width="100%">
+    <colgroup>
+        <col style="background-color: #e0f7fa;">
+        <col style="background-color: #b2ebf2;">
+        <col style="background-color: #80deea;">
+        <col style="background-color: #4dd0e1;">
+    </colgroup>
+    <tr>
+        <th rowspan="2">Категорія</th>
+        <th colspan="2">Деталі</th>
+        <th rowspan="2">Ціна</th>
+    </tr>
+    <tr>
+        <th>Бренд</th>
+        <th>Характеристики</th>
+    </tr>
+    <tr>
+        <td rowspan="2" align="center">Холодильники</td>
+        <td align="center">Samsung</td>
+        <td align="center">350 л, А++</td>
+        <td align="center">$900</td>
+    </tr>
+    <tr>
+        <td align="center">LG</td>
+        <td align="center">Інверторний мотор</td>
+        <td align="center">$850</td>
+    </tr>
+    <tr>
+        <td rowspan="2" align="center">Пилососи</td>
+        <td align="center">Dyson</td>
+        <td align="center">Циклонна технологія</td>
+        <td align="center">$500</td>
+    </tr>
+    <tr>
+        <td align="center">Philips</td>
+        <td align="center">Фільтр HEPA</td>
+        <td align="center">$300</td>
+    </tr>
+    <tr>
+        <td colspan="3" align="center"><b>Всі товари сертифіковані</b></td>
+        <td align="center">Гарантія 2 роки</td>
+    </tr>
+</table>
+       
+
+    
+    <h2>Завітайте в наш офлайн-магазин за адресою вул. Хрещатик, 21 <h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17221.12625638999!2d30.501123800514883!3d50.44856959779908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce569a09009d%3A0x7650455b1e578304!2z0JDQu9C70L4!5e0!3m2!1sru!2sua!4v1740902718418!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <h3>Розіграш подарунків!</h3>
+<p>Ми раді повідомити про неймовірний розіграш для наших клієнтів! Купуйте товари на суму від $500 та отримайте шанс виграти <span class="highlight">цінні подарунки</span>! Детальні умови акції дізнайтеся за <a href="https://faq.comfy.ua/receive-a-gift/" target="_blank">цим посиланням</a>.</p>
 </body>
 </html>
