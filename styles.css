@@ -1,0 +1,117 @@
+body {
+  background-color: #c1cee5da;
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+img {
+  width: 100px;
+  height: auto;
+}
+
+h1 {
+  text-align: center;
+  color: #00509E !important; 
+  font-size: 28px;
+}
+
+a {
+  color: #00509E;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff4500 !important; 
+  text-decoration: underline;
+}
+
+/* Виділені елементи */
+.highlight {
+  font-weight: bold;
+  color: rgb(85, 105, 159);
+}
+
+.italic {
+  font-style: italic;
+}
+
+/* Таблиці */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #fff;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #00509E;
+  color: white;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+dl {
+  margin-top: 10px;
+}
+
+dt {
+  font-weight: bold;
+  color: #00509E;
+}
+
+dd {
+  margin-left: 20px;
+}
+
+.review { 
+  border: 1px solid darkgreen; 
+  padding: 15px; 
+  margin: 10px; 
+  border-radius: 10px; 
+  background-color: #c0d1ee; 
+}
+
+.product {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.product img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.product h2 {
+  color: #4682b4;
+}
+
+#highlighted-text {
+  background-color: #ccc092;
+  color: black;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}

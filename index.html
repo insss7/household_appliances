@@ -4,62 +4,7 @@
     <meta charset="UTF-8">
     <meta name="author" content="Anastasiya">
     <title>Побутові товари</title>
-    <style>
-        body {
-            background-color: #c1cee5da;
-            font-family: Arial, sans-serif;
-            color: #333;
-            text-align: justify;
-        }
-        h1 {
-            text-align: center;
-            color: #00509E;
-        }
-        p {
-            font-size: 16px;
-        }
-        .highlight {
-            font-weight: bold;
-            color: rgb(85, 105, 159);
-        }
-        .italic {
-            font-style: italic;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            background-color: #fff;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 10px;
-            text-align: center;
-        }
-        th {
-            background-color: #00509E;
-            color: white;
-        }
-        img {
-            width: 100px;
-            height: auto;
-        }
-
-        a {
-            color: #00509E;
-            text-decoration: none;
-        }
-        a:visited {
-            color: #800080; 
-        }
-        a:hover {
-            color: #e69935; 
-        }
-        a:active {
-            color: #becb2e; 
-        }
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Вітаємо у магазині!</h1>
@@ -77,7 +22,7 @@
     <p><a href="about_us.html">Перейти на сторінку "Про нас"</a></p>
 
 
-    <h2>Product Showcase</h2>
+    <h2>Фото товарів</h2>
             <a href="all.jpg" target="_blank">
                 <img src="all.jpg" alt="Побутова техніка" style="width: 500px; height: auto;">
               </a>
@@ -136,12 +81,11 @@ cellpadding="15" border="1" width="100%">
         <td rowspan="2" align="center">Холодильники</td>
         <td align="center">Samsung</td>
         <td align="center">350 л, А++</td>
-        <td align="center">$900</td>
+        <td rowspan="2" align="center">$900</td>
     </tr>
     <tr>
         <td align="center">LG</td>
         <td align="center">Інверторний мотор</td>
-        <td align="center">$850</td>
     </tr>
     <tr>
         <td rowspan="2" align="center">Пилососи</td>
@@ -153,6 +97,7 @@ cellpadding="15" border="1" width="100%">
         <td align="center">Philips</td>
         <td align="center">Фільтр HEPA</td>
         <td align="center">$300</td>
+
     </tr>
     <tr>
         <td colspan="3" align="center"><b>Всі товари сертифіковані</b></td>
