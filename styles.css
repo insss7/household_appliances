@@ -11,6 +11,11 @@ img {
   height: auto;
 }
 
+p {
+  line-height: 2;
+  font-size: 15px;
+}
+
 h1 {
   text-align: center;
   color: #00509E !important; 
@@ -27,7 +32,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Виділені елементи */
 .highlight {
   font-weight: bold;
   color: rgb(85, 105, 159);
@@ -37,7 +41,6 @@ a:hover {
   font-style: italic;
 }
 
-/* Таблиці */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -114,4 +117,19 @@ dd {
   padding: 10px;
   text-align: center;
   border-radius: 5px;
+}
+
+h2 I{
+  background-color: #8bc3f1;
+  color: #333;
+  font-size: x-large;
+  font-style: normal;
+}
+
+I + B{
+  color: #ff4500;
+}
+
+p > strong{
+  color: rgb(103, 192, 39);
 }
