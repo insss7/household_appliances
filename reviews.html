@@ -8,14 +8,30 @@
     <style>
         body { background-color: #cdd0ff; font-family: Arial, sans-serif; }
         h1, h2 { text-align: center; }
-        .review { border: 1px solid darkgreen; padding: 15px; margin: 10px; border-radius: 10px; background-color: #c0d1ee; }
+        .review { border: 1px solid rgb(107, 86, 126); padding: 15px; margin: 10px; border-radius: 10px; background-color: #c0d1ee; }
+        .buttons { text-align: center; margin-top: 20px; }
+        button { background-color: #a8a8ef; color: #141414; padding: 10px 20px; margin: 5px; border: none; border-radius: 8px; cursor: pointer; font-size: 16px; }
+        button:hover { background-color: #8f8fdd; }
     </style>
 </head>
 <body>
     <h1>Від вас про нас!</h1>
 
-    <p>Ми цінуємо кожного нашого клієнта і прагнемо забезпечити найвищий рівень сервісу. Ваша думка дуже важлива для нас, адже вона допомагає нам ставати ще кращими.</p>
-    <p>Ознайомтеся з відгуками наших клієнтів, щоб дізнатися, чому вони обирають нас знову і знову!</p>
+    <div id="info">Ласкаво просимо до нашого магазину! </div>
+
+    <p class="desc">Широкий вибір товарів з високою <b>якістю</b></p>
+    <p class="desc">Оперативна доставка та надійне <b>обслуговування</b></p>
+    
+    <span id="text-node">Наш магазин - ваш надійний партнер!</span>
+
+    <style>
+        #info, .desc, #text-node, #text-node {
+            text-align: left;
+            margin: 5px 0; /* Зменшуємо відстань між елементами */
+            line-height: 1.5; /* Зменшуємо висоту рядків */
+        }
+    </style>
+    
 
     <h2>Отож, що кажуть наші клієнти?</h2>
 
@@ -39,6 +55,21 @@
         <p>Світлана: "Це був найкращий досвід покупок за останній час. Команда була привітною, оперативною і справді турбувалася про моє задоволення. Рекомендую всім!"</p>
     </div>
     
-    <p><a href="index.html">Повернутись на головну</a></p>
+    <div class="buttons">
+    <button onclick="dialog()">Оцінити нас</button>
+    <button onclick="Info('Непрон', 'Анастасія')">Більше про розробника</button>
+    <button onclick="compare()">Порівняти</button>
+    <button onclick="change()">Змінити фон</button>
+    <button onclick="change_page()">Наші партнери</button>
+    </div>
+    
+    <div class="buttons">
+        <button onclick="demo()">Запустити демонстрацію</button>
+    </div>
+    
+    <p style="text-align: center; margin-top: 30px;"><a href="index.html">Повернутись на головну</a></p>
+    
+    <script src="script.js" defer></script>
+    
 </body>
 </html>

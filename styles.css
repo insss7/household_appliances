@@ -120,13 +120,6 @@ I + B{
   color: #ff4500;
 }
 
-p strong{
-  color: rgb(10, 39, 230);
-}
-
-p > strong{
-  color: rgb(103, 192, 39);
-}
 
 a  {
   color: #3a743f
@@ -181,17 +174,17 @@ a  {
   .text-block {
       padding-left: 20px;
   }
-  
-  ul li:first-child {
-    font-weight: bold;
-    color: #73ab3b;
-  }
 
   ul li:before {
     content: "\13198";
   }
 
-  dl dd:after {
-    content: "\1F195";
-  }
+  <style>
+    #info, .desc, #text-node {
+        text-align: center;
+        margin: 5px 0; /* Зменшуємо відстань між елементами */
+        line-height: 1.2; /* Зменшуємо висоту рядків */
+    }
+</style>
+
 
