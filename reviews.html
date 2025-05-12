@@ -12,18 +12,40 @@
         .buttons { text-align: center; margin-top: 20px; }
         button { background-color: #a8a8ef; color: #141414; padding: 10px 20px; margin: 5px; border: none; border-radius: 8px; cursor: pointer; font-size: 16px; }
         button:hover { background-color: #8f8fdd; }
+        #questionlist li {
+    padding: 5px 0;
+    margin-bottom: 3px;
+    color: #333;
+    font-size: 15px;
+}
+    button:active {
+    background-color: #6f6fbd;
+    transform: scale(0.98);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    button.pressed {
+  background-color: #6f6fbd;
+  transform: scale(0.98);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    #questionlist li:hover {
+        background-color: #a8a8ef; /* Зміна кольору при наведенні */
+        color: white; /* Текст білим при наведенні */
+    }
+
+    
+#questionlist li.active {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #4a4a8a;
+}
     </style>
+  
 </head>
 <body>
     <h1>Від вас про нас!</h1>
-
-    <div id="info">Ласкаво просимо до нашого магазину! </div>
-
-    <p class="desc">Широкий вибір товарів з високою <b>якістю</b></p>
-    <p class="desc">Оперативна доставка та надійне <b>обслуговування</b></p>
-    
-    <span id="text-node">Наш магазин - ваш надійний партнер!</span>
-
     <style>
         #info, .desc, #text-node, #text-node {
             text-align: left;
@@ -55,18 +77,32 @@
         <p>Світлана: "Це був найкращий досвід покупок за останній час. Команда була привітною, оперативною і справді турбувалася про моє задоволення. Рекомендую всім!"</p>
     </div>
     
-    <div class="buttons">
-    <button onclick="dialog()">Оцінити нас</button>
-    <button onclick="Info('Непрон', 'Анастасія')">Більше про розробника</button>
-    <button onclick="compare()">Порівняти</button>
-    <button onclick="change()">Змінити фон</button>
-    <button onclick="change_page()">Наші партнери</button>
-    </div>
+    <h4>Чому обирають нас?</h4>
+    <ul id="questionlist">
+        <li>Якість товарів</li>
+        <li>Обслуговування</li>
+        <li>Швидкість доставки</li>
+        <li>Ціни</li>
+      </ul>
     
     <div class="buttons">
-        <button onclick="demo()">Запустити демонстрацію</button>
-    </div>
-    
+
+        <button id="button1">💳 Секрет успіху </button>
+        <button id="button2">💿 Чому ми? </button>
+        <button id="button3"> 🎁 </button>
+        <button onclick="handleAttributeClick()">🛍️ Обери українське!</button>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+            
+        </body>
+        </html></button> 
+      </div>
+
     <p style="text-align: center; margin-top: 30px;"><a href="index.html">Повернутись на головну</a></p>
     
     <script src="script.js" defer></script>
