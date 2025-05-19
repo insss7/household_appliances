@@ -1,3 +1,48 @@
+function dialog() {
+  let test; 
+
+  do {
+      test = parseInt(prompt("Оціни наш магазин від 1 до 10:"));
+  } while (isNaN(test) || test < 1 || test > 10);
+
+  if (test >= 5) {
+      alert("Дякуємо за високу оцінку! Ми раді, що вам сподобалося 🛒");
+  } else {
+      alert("Шкода, що ми не виправдали очікувань. Обіцяємо стати кращими!");
+  }
+}
+
+
+function Info(lastName, firstName, position = "web-developer") {
+  alert("Розробник сторінки:" + "\nІм'я: " + firstName + "\nПрізвище: " + lastName + "\nПосада: " + position);
+}
+
+function compare() {
+  str1 = prompt("введи перший рядок");
+  str2 = prompt("введи другий рядок");
+
+  if (str1.length > str2.length) {
+    alert("цей рядок довше: " + str1);
+  } else if (str2.length > str1.length) {
+    alert("цей рядок довше: " + str2);
+  } else {
+    alert("вони однакові");
+  }
+}
+
+function change() {
+  const originalColor = document.body.style.backgroundColor;
+  document.body.style.backgroundColor = "#fff0ff"; 
+
+  setTimeout(function () {
+      document.body.style.backgroundColor = originalColor;
+  }, 30000); 
+}
+
+function change_page() {
+  location.href = "https://rozetka.com.ua/";
+}
+
 // Кнопка 1 — працює лише при подвійному кліку
 function handleDoubleClick() {
   alert("💬 Задоволений клієнт - успіх магазину");
@@ -13,27 +58,23 @@ function handleSequentialClick() {
     alert("✅ Найприємніші ціни!");
   } else if (clickCount === 2) {
     alert("✅ Найкраща якість");
-    clickCount = 0;  // Скидаємо лічильник, щоб почати знову
+    clickCount = 0;  
   }
 }
 
 document.getElementById("button2").addEventListener("click", handleSequentialClick);
-
 document.getElementById("button2").addEventListener("click", function () {
   console.log("📌 Це додатковий обробник для кнопки 2");
 });
 
-//Створення обʼєкта, який містить метод handleEvent
 let eventHandlerObject = {
   handleEvent: function(event) {
     alert("Даруємо знижку 15% на наступне замовлення! 😉");
     
-    // Видаляємо обробник події, щоб кнопка більше не реагувала на кліки
     event.currentTarget.removeEventListener("click", this);
   }
 };
 
-// Призначення обробника події для кнопки "button3"
 document.getElementById("button3").addEventListener("click", eventHandlerObject);
 
 function handleAttributeClick() {
@@ -75,3 +116,53 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
  
+let targetElement = document.getElementById('target');
+let logElement = document.getElementById('log');
+let colorChangedLogged = false;
+
+targetElement.addEventListener('mouseover', function (event) {
+    event.target.style.backgroundColor = 'lightgreen';
+});
+
+targetElement.addEventListener('mouseout', function(event) {
+    event.target.style.backgroundColor = 'lightblue';
+    
+    if (!colorChangedLogged) {
+        logElement.innerText = `colour is changed`;
+        colorChangedLogged = true;
+    }
+});
+
+let dragElement = document.getElementById("dragElement");
+let dropZone = document.getElementById("dropZpone");
+let offsetX, offsetY;
+
+dragElement.addEventListener ("mousedown", dragStart);
+
+function dragStart(e) {
+  document.addEventListener("mousemove", dragging); 
+  document.addEventListener("mouseup", dragEnd);
+
+offsetX = e.clientX - dragElement.offsetLeft;
+offsetY = e.clientY - dragElement.offsetTop;
+}
+
+function dragging(e) {
+dragElement.style.left = e.clientX - offsetX + "px";
+dragElement.style.top = e.clientY - offsetY + "px";
+}
+
+function dragEnd() {
+  document.removeEventListener("mousemove", dragging); 
+  document.removeEventListener ("mouseup", dragEnd);
+
+// Check if the element has been dropped into the drop zone
+let dropRect = dropZone.getBoundingClientRect();
+let dragRect = dragElement.getBoundingClientRect();
+if (dragRect.left >= dropRect. left && 
+  dragRect.right <= dropRect.right && 
+  dragRect.top >= dropRect.top &&
+  dragRect.bottom <= dropRect.bottom) {
+alert ("Element has been dropped into the drop zone!");
+}
+}

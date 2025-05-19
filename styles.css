@@ -69,8 +69,6 @@ dd {
 
 .review { 
   border: 1px solid darkgreen; 
-  padding: 15px; 
-  margin: 10px; 
   border-radius: 10px; 
   background-color: #c0d1ee; 
 }
@@ -184,3 +182,13 @@ a  {
   color: #4a4a8a;
 }
 
+#dragElement {
+  width: 100px;
+  position: absolute;
+  cursor: grab;
+  border: 4px dashed #4a4a8a; /* стиль рамки */
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #e8e8ff; /* легкий фон для контрасту */
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2); /* невелика тінь */
+}
