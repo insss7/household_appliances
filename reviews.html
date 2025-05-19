@@ -30,18 +30,6 @@
   transform: scale(0.98);
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
     }
-
-    #questionlist li:hover {
-        background-color: #a8a8ef; /* Зміна кольору при наведенні */
-        color: white; /* Текст білим при наведенні */
-    }
-
-    
-#questionlist li.active {
-    font-weight: bold;
-    text-decoration: underline;
-    color: #4a4a8a;
-}
     </style>
   
 </head>
@@ -59,8 +47,8 @@
     <h2>Отож, що кажуть наші клієнти?</h2>
 
     <div class = "bottom-row">
-        <span style = "font-size: 100%;">Ваша думка дуже важлива для нас!</span>
-    </div>
+      <span style = "font-size: 100%;">Ваша думка дуже важлива для нас!</span>
+  </div>
     
     <div class="review">
         <p>Іван: "Я був приємно здивований рівнем обслуговування. Персонал був дуже уважний, і всі мої питання були вирішені швидко. Рекомендую всім!"</p>
@@ -77,37 +65,15 @@
     <div class="review">
         <p>Світлана: "Це був найкращий досвід покупок за останній час. Команда була привітною, оперативною і справді турбувалася про моє задоволення. Рекомендую всім!"</p>
     </div>
-    
-    <h4>Чому обирають нас?</h4>
-    <ul id="questionlist">
-        <li>Якість товарів</li>
-        <li>Обслуговування</li>
-        <li>Швидкість доставки</li>
-        <li>Ціни</li>
-      </ul>
-    
-    <div id="target">Hover here</div>
+
+    <div id="target">Тисни, щоб дізнатися передбачення ✨</div>
     <p id="log"></p>
 
-    <img id="dragElement" src="your-image.jpg" alt="Перетягни мене" style="width: 100px; position: absolute; cursor: grab;">
-    <div id="dropZone">Drop here</div>
+    <img id="dragElement" src="surprise.jpg" alt=" " style="width: 100px; position: absolute; cursor: grab;">
+    <div id="dropZone">Промокод: 2025</div>
 
     <div class="buttons">
-
-      <button id="button1">💳 Секрет успіху </button>
-      <button id="button2">💿 Чому ми? </button>
-      <button id="button3"> 🎁 </button>
       <button onclick="handleAttributeClick()">🛍️ Обери українське!</button>
-      <html lang="en">
-      <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Document</title>
-      </head>
-      <body>
-          
-      </body>
-      </html></button> 
     </div>
 
     <p style="text-align: center; margin-top: 30px;"><a href="index.html">Повернутись на головну</a></p>
